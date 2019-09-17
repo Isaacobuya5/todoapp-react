@@ -95,6 +95,7 @@ class TodoApp extends React.Component {
             <div>
                <Header title={title} subtitle={subtitle} />
                 <Action 
+                hasOptions ={this.state.options.length > 0}
                 handlePick={this.handlePick}
                 />
                 <Options 
